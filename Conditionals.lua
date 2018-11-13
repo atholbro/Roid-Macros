@@ -405,6 +405,7 @@ Roids.Keywords = {
     end,
     
     dead = function(conditionals)
+        if conditionals.target == nil then return false; end
         return UnitIsDeadOrGhost(conditionals.target);
     end,
     
